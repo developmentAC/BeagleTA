@@ -8,6 +8,8 @@
 target/
 0_out/
 removed_rows.txt
+examples/
+graphics/
 
 # bash #
 ########
