@@ -27,6 +27,9 @@
     - [Flow](#flow-2)
     - [Usage](#usage-2)
     - [Examples](#examples)
+  - [Corpus](#corpus)
+  - [Setting up the Corpus](#setting-up-the-corpus)
+  - [Citations](#citations)
   - [A Work In Progress](#a-work-in-progress)
 
 ## Overview
@@ -220,9 +223,46 @@ cargo run --bin 3_csv_random_sampler -- --input 0_out/output.csv --sample_size 5
 
 - Prepare a network from a user-selected CSV file and save network to `0_out/sampler_output_01.csv`:
 
-``` bash 
+``` bash
 python3 interactive_network_2.py --datafile 0_out/sampler_output_01.csv --output_file sampler_output_01_plot
 ```
+
+## Corpus
+
+NCBI offers bulk downloads of literature in two types of packages: _commercial_ and _non-commercial_. Please see https://ftp.ncbi.nlm.nih.gov/pub/pmc/readme.txt for more information.
+
+BeagleTM has been designed to work with the xml files which are found in the `*.tar.gz` files. These `tar.gz` files files may be found at the below online repositories.
+
+- _Commercially_ available
+  - https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_comm/txt/
+
+- _Non-Commercially_ available
+  - https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_bulk/oa_noncomm/txt/
+* _FTP_ site
+  + ftp://ftp.ncbi.nlm.nih.gov/pub/pmc
+
+## Setting up the Corpus
+
++ Make a directory to store your downloaded files such as `corpus/` and use your browser to download the `tar.gz` data files from one of the above links. 
+
+If using Linux or MacOS, Another way to untar the files in bulk is by the following script. This script code can be placed into a file (`bulkUntar.sh`) and run using the command, `sh bulkUntar.sh` at the (Unix) terminal and will place the files into separate directories which must be placed into the `corpus/` directory.
+
+``` bash
+for x in `ls *.tar.gz`
+  do
+  	tar -vxf $x
+  done
+```
+
+* Once these files have been downloaded, the `txt` files must be extracted (i.e., an untarring step). The command, `tar -zxvf filename.tar.gx` can handle this step. If there are several files, then wildcards may be used: `tar -zxvf *.tar.gz`.
+
+## Citations
+
+- Accepted at FLAIRS-38 (The Florida Artificial Intelligence Research Society).
+- Formal reference to follow when available.
+
+  - Bonham-Carter, Oliver. "An Efficient Text Analysis Tool for Streamlining Literature Reviews", Proceedings of FLAIRS-38 
+
 ## A Work In Progress
 Check back often to see the evolution of the project!! BeagleTA is a work-in-progress. Updates will come periodically.
 
