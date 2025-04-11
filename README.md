@@ -1,4 +1,4 @@
-# BeagleTA: A Text Analysis Processing Pipeline for the analysis of relationships between documents based on word usage.
+# BeagleTA: A Text Analysis Processing Pipeline for the analysis of relationships between documents based on word usage
 
 - Oliver Bonham-Carter, [Web](https://www.oliverbonhamcarter.com/)
 - email: obonhamcarter@allegheny.edu
@@ -7,7 +7,7 @@
 ![Logo](graphics/logo.png)
 
 ## Table of Contents
-- [BeagleTA: A Text Analysis Processing Pipeline for the analysis of relationships between documents based on word usage.](#beagleta-a-text-analysis-processing-pipeline-for-the-analysis-of-relationships-between-documents-based-on-word-usage)
+- [BeagleTA: A Text Analysis Processing Pipeline for the analysis of relationships between documents based on word usage](#beagleta-a-text-analysis-processing-pipeline-for-the-analysis-of-relationships-between-documents-based-on-word-usage)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Setup: Rust, Python and Dependencies](#setup-rust-python-and-dependencies)
@@ -44,7 +44,6 @@ The random sampler binary randomly selects rows from the cleaned CSV file and ge
 The pipeline is designed to be user-friendly, with clear usage instructions and examples provided for each binary. The command-line interface allows users to easily specify input and output files, as well as any additional parameters required for each task. This makes it easy to integrate the pipeline into existing workflows or to use it as a standalone tool for text analysis.
 
 The pipeline is particularly useful for researchers and data scientists working with text data, as it provides a streamlined approach to processing and analyzing large datasets. The use of Rust for implementation ensures high performance and reliability, making it suitable for handling large-scale text analysis tasks.
-
 
 ## Setup: Rust, Python and Dependencies
 
@@ -112,7 +111,6 @@ The outputs from the Python scripts have a lot of overlap with each other and th
 + `interactive_network_2.py` outputs `network.html` which interactive network visualization using pyvis of keywords and connected articles.
 + `complete_network.py` outputs a network of keywords and articles. The weight of the edge indicates the number of keyword occurrences in an article. The minimum number of keyword occurrences for articles may be toggled with the  `-t <integer>` parameter. The color of the nodes may be toggled with the `-nc <color>` and `-ec <color>` parameters.
 ---
-
 
 ![complete_network.py](graphics/complete_network.png)
 An examples of the output of the `complete_network.py` script. 
