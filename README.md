@@ -30,6 +30,7 @@
   - [Corpus](#corpus)
   - [Setting up the Corpus](#setting-up-the-corpus)
   - [Citations](#citations)
+  - [Developer Notes](#developer-notes)
   - [A Work In Progress](#a-work-in-progress)
 
 ## Overview
@@ -261,7 +262,12 @@ for x in `ls *.tar.gz`
 - Accepted at FLAIRS-38 (The Florida Artificial Intelligence Research Society).
 - Formal reference to follow when available.
 
-  - Bonham-Carter, Oliver. "An Efficient Text Analysis Tool for Streamlining Literature Reviews", Proceedings of FLAIRS-38 
+  - Bonham-Carter, Oliver. "An Efficient Text Analysis Tool for Streamlining Literature Reviews", Proceedings of FLAIRS-38
+  
+## Developer Notes
+
+- Added dependency:
+  - `crossbeam-channel = "0.5.15"` to upgrade from v0.5.11 which had dependabot issue ("crossbeam-channel Vulnerable to Double Free on Drop #1)
 
 ## A Work In Progress
 Check back often to see the evolution of the project!! BeagleTA is a work-in-progress. Updates will come periodically.
