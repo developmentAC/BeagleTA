@@ -3,7 +3,6 @@ use serde::Deserialize;
 use std::fs;
 use toml::de::from_str;
 
-// Struct to represent the package information in Cargo.toml
 #[derive(Debug, Deserialize)]
 struct Package {
     name: String,
@@ -11,14 +10,18 @@ struct Package {
     edition: String,
 }
 
-// Struct to represent the entire Cargo.toml file
 #[derive(Debug, Deserialize)]
 struct CargoToml {
     package: Package,
 }
 
-// Function to parse the Cargo.toml file and extract package information
 fn parse_cargo_toml(file_path: &str) {
+    // Check if the file exists
+    if !std::path::Path::new(file_path).exists() {
+        eprintln!("\t Cargo.toml file not found;\n\t Cannot display version information.\n");
+        return;
+    }
+
     // Read the content of the Cargo.toml file
     let content = fs::read_to_string(file_path).expect("Failed to read Cargo.toml file");
 
@@ -36,7 +39,6 @@ fn parse_cargo_toml(file_path: &str) {
     colour_print(&out_message_2, "purple");
 }
 
-// Main function to be called from the main.rs
 pub fn main() {
     let file_path = "Cargo.toml"; // Path to your Cargo.toml file
     parse_cargo_toml(file_path);
