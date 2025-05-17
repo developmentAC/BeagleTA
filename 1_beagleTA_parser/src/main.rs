@@ -90,7 +90,7 @@ fn main() -> io::Result<()> {
     };
 
     if keyword_file_path.is_empty() {
-        colour_print("\t KW path cannot be empty!", "purple");
+        colour_print("\t Keyword path cannot be empty!", "purple");
     }
 
     if data_dir_path.is_empty() {
@@ -177,10 +177,24 @@ fn main() -> io::Result<()> {
     )?;
 
     colour_print(
-        &format!("\t ✨ Run commands to create keyword analysis and other visualizations ..."),
+        &format!("\n\t ✨ Run commands to create virtual environment with Python for the following commands ..."),
         "yellow",
     );
 
+    colour_print(
+        &format!(
+            "\t python3 -m venv ~/Desktop/venv
+\t source ~/Desktop/venv/bin/activate
+\t pip install plotly matplotlib numpy pandas networkx seaborn scikit-learn pyvis
+"
+        ),
+        "cyan",
+    );
+
+    colour_print(
+        &format!("\t ✨ Run commands to create keyword analysis and other visualizations ..."),
+        "yellow",
+    );
 
     colour_print(
         &format!("\t cd 0_out && python3 visualizations.py && cd .."),

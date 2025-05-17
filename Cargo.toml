@@ -1,6 +1,6 @@
 [package]
 name = "BeagleTA"
-version = "1.5.9"
+version = "1.5.11"
 edition = "2021"
 categories  = ["Parser"]
 license = "MIT"
