@@ -722,9 +722,12 @@ def main():
         generate_node_degree_report(G, df, output_file=args.degree_report, detailed_report=args.detailed_report)
 
     # add extension to the output file
-    output_file=args.output_file + ".html"
+#    output_file=args.output_file + ".html" # this is not needed, we can use the default value
+    output_file=args.output_file
 
-    # Visualize the graph interactively
+
+
+        # Visualize the graph interactively
     visualize_interactive_graph(G, output_file, keyword_color=keyword_color, file_color=file_color)
 
     # Former code, maybe we can use it later when we figure out the extension checking...
