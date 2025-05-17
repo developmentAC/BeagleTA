@@ -224,7 +224,7 @@ fn main() -> io::Result<()> {
     )?;
 
     colour_print(
-        &format!("\t cd 0_out && python3 complete_network.py -f output.csv -t 6 -nc blue -ec green  && cd .. "),
+        &format!("\t cd 0_out && python3 complete_network.py -f output.csv -t 6 -nc blue -ec green  && cd .. \n"),
         "cyan",
     );
 
