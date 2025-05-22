@@ -263,11 +263,8 @@ for x in `ls *.tar.gz`
 
 ## Citations
 
-- Accepted at FLAIRS-38 (The Florida Artificial Intelligence Research Society).
-- Formal reference to follow when available.
+  - Bonham-Carter, O. (2025). An Efficient Text Analysis Tool for Streamlining Literature Reviews: Text Analysis To Streamline Literature Reviews. The International FLAIRS Conference Proceedings, 38(1). https://doi.org/10.32473/flairs.38.1.138991
 
-  - Bonham-Carter, Oliver. "An Efficient Text Analysis Tool for Streamlining Literature Reviews", Proceedings of FLAIRS-38
-  
 ## Developer Notes
 
 - Added dependency:
