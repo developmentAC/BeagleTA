@@ -9,6 +9,7 @@
 ## Table of Contents
 - [BeagleTA: A Text Analysis Processing Pipeline for the analysis of relationships between documents based on word usage](#beagleta-a-text-analysis-processing-pipeline-for-the-analysis-of-relationships-between-documents-based-on-word-usage)
   - [Table of Contents](#table-of-contents)
+  - [Presentation Slides](#presentation-slides)
   - [Overview](#overview)
   - [Setup: Rust, Python and Dependencies](#setup-rust-python-and-dependencies)
   - [BeagleTA: A Text Analysis Processing Pipeline](#beagleta-a-text-analysis-processing-pipeline)
@@ -32,6 +33,11 @@
   - [Citations](#citations)
   - [Developer Notes](#developer-notes)
   - [A Work In Progress](#a-work-in-progress)
+
+## Presentation Slides
+
+If you would like to see the presentation slides for this project, please see the below link;
+[BeagleTA Presentation Slides](docs/Flairs_2025_beagleTA_presentationSlides.pdf) from The Flairs-38 (2025) conference in Daytona Beach, FL.
 
 ## Overview
 
