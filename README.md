@@ -194,7 +194,6 @@ A9 was removed: [1.0, 0.0, 0.0]
 
 ### Purpose 
 
-
 The Sampler tool is used to randomly sample a specified number of rows from a cleaned CSV file and generate one or more smaller CSV files. This ia also particularly useful for working with large datasets that are difficult to process or visualize in their entirety.
 
 There are some types of analysis in which the trends are more interesting than the actual documents containing keywords. If the user wants to have a basic snapshot of the kinds of connections in the data, then the Sampler tool could be used to pick a random selection of data to plot these types of results.
